@@ -3,7 +3,12 @@ const buynow = () => {
 };
 
 const buynowWithEachRound = () => {
-  document.querySelectorAll("a[data-button='6559']")[0].click();
+  document.querySelector("a[data-button='6824']").click();
+};
+
+const membership = () => {
+  document.querySelector("input[id='txt_verifycode']").value = "1234";
+  document.querySelector("div[id='btn_verifycode']").click();
 };
 
 const acceptConditions = () => {
@@ -51,10 +56,18 @@ const selectSitSeatFromRightZone = () => {
 };
 
 const selectSitSeatFromRightZoneWithFirstRowCondition = () => {
-  [...document.querySelectorAll("tr")[0].querySelectorAll("td")]
+  [...[...document.querySelectorAll("tr")][0].querySelectorAll("td")]
     .filter((el) => el.querySelector("div[class='seatuncheck']"))
     .slice(-1)[0]
     .click();
+};
+
+const selectSitSeatNearStage = () => {
+  for (let i = 0; i <= 3; i++) {
+    [...[...document.querySelectorAll("tr")][i].querySelectorAll("td")]
+      .filter((el) => el.querySelector("div[class='seatuncheck']"))[0]
+      .click();
+  }
 };
 
 const booknow = () => {
