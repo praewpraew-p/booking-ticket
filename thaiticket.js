@@ -17,7 +17,11 @@ const acceptConditions = () => {
 };
 
 const selectRound = () => {
-  document.getElementById("rdId").value = "73442";
+  document.querySelectorAll("select[name='rdId']")[0].options.selectedIndex = 1; // DAY1
+  document.querySelectorAll("select[name='rdId']")[0].options.selectedIndex = 2; // DAY2
+  document
+    .querySelectorAll("select[name='rdId']")[0]
+    .dispatchEvent(new Event("change"));
 };
 
 const selectSitZone = () => {
