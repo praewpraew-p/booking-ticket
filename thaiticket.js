@@ -1,3 +1,5 @@
+// Tips: บัตรนั่งกดรัวๆ ไม่ได้ ต้องค่อยๆ กด กดแล้วรีบ bookingเลย, บัตรยืน จังหวะกดไปหน้าจ่ายเงินอย่ากดไวเกินไป ไม่งั้นจะค้าง
+
 const buynow = () => {
   document.getElementsByClassName("btn-red btn-buynow btn-item")[0].click();
 };
@@ -66,6 +68,58 @@ const selectSitSeatFromRightZoneWithFirstRowCondition = () => {
     .click();
 };
 
+// Select Seat in Middle Row
+const selectSitSeatMiddleRowFromRightZone = () => {
+  [
+    ...document
+      .querySelectorAll("tr")
+      [Math.floor(document.querySelectorAll("tr").length) / 2].querySelectorAll(
+        "td"
+      ),
+  ]
+    .filter((el) => el.querySelector("div[class='seatuncheck']"))
+    .slice(-1)[0]
+    .click();
+};
+
+const filterOnlySeatUnCheckRow = () => {
+  [...document.querySelectorAll("tr")].filter((el) =>
+    el.querySelector("td > div[class='seatuncheck']")
+  );
+};
+
+// Select Seat in Middle Row With Checking Seat Uncheck Row
+const selectMiddleSeatOfSeatUnCheckRow = () => {
+  [...document.querySelectorAll("tr")]
+    .filter((el) => el.querySelector("td > div[class='seatuncheck']"))
+    [
+      Math.floor(
+        [...document.querySelectorAll("tr")].filter((el) =>
+          el.querySelector("td > div[class='seatuncheck']")
+        ).length / 2
+      )
+    ].querySelector("td > div[class='seatuncheck']")
+    .click();
+};
+
+// Select Seat in Middle Row With Checking Seat Uncheck Row from Right Zone
+const selectMiddleSeatOfSeatUnCheckRowRightZone = () => {
+  [
+    ...[...document.querySelectorAll("tr")]
+      .filter((el) => el.querySelector("td > div[class='seatuncheck']"))
+      [
+        Math.floor(
+          [...document.querySelectorAll("tr")].filter((el) =>
+            el.querySelector("td > div[class='seatuncheck']")
+          ).length / 2
+        )
+      ].querySelectorAll("td > div[class='seatuncheck']"),
+  ]
+    .slice(-1)[0]
+    .click();
+};
+
+// Not Working Now
 const selectSitSeatNearStage = () => {
   for (let i = 0; i <= 3; i++) {
     [...[...document.querySelectorAll("tr")][i].querySelectorAll("td")]
