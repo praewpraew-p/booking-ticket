@@ -22,6 +22,11 @@ const selectRoundAndZone = () => {
   document.querySelectorAll("area[data-zone='A3']")[0].click();
 };
 
+const selectStandingSeatAndBooknow = () => {
+  document.getElementsByClassName("sign plus")[0].click();
+  document.getElementsByClassName("btn btn-book mt-3")[0].click();
+};
+
 const selectSitSeatAndBooknow = () => {
   [...document.querySelectorAll("div[class='ng-star-inserted']")]
     .filter((el) => el.querySelector("svg[class='seat available']"))[0]
@@ -63,6 +68,30 @@ const selectSitSeatFromLeftZoneAndBookNowInOneLine = () => {
   document.getElementsByClassName("btn btn-book mt-3")[0].click();
 };
 
+const selectSitSeatWithMiddleSeatOfTheRowAndBooknow = () => {
+  [
+    ...[...document.querySelectorAll("tr")]
+      .filter((el) =>
+        el.getElementsByClassName("seat-rotate ng-star-inserted")
+      )[1]
+      .querySelectorAll("div[class='ng-star-inserted']"),
+  ]
+    .filter((el) => el.querySelector("svg[class='seat available']"))
+    [
+      Math.floor(
+        [
+          ...[...document.querySelectorAll("tr")]
+            .filter((el) =>
+              el.getElementsByClassName("seat-rotate ng-star-inserted")
+            )[1]
+            .querySelectorAll("div[class='ng-star-inserted']"),
+        ].filter((el) => el.querySelector("svg[class='seat available']"))
+          .length / 2
+      )
+    ].click();
+  document.getElementsByClassName("btn btn-book mt-3")[0].click();
+};
+
 const selectSitSeatSpecificRowAndBooknow = () => {
   [
     ...[...document.querySelectorAll("tr")]
@@ -73,11 +102,6 @@ const selectSitSeatSpecificRowAndBooknow = () => {
   ]
     .filter((el) => el.querySelector("svg[class='seat available']"))[0]
     .click();
-  document.getElementsByClassName("btn btn-book mt-3")[0].click();
-};
-
-const selectStandingSeatAndBooknow = () => {
-  document.getElementsByClassName("sign plus")[0].click();
   document.getElementsByClassName("btn btn-book mt-3")[0].click();
 };
 
