@@ -1,5 +1,9 @@
-const byunow = () => {
+const buynow = () => {
   document.getElementsByClassName("button_buy")[0].click();
+};
+
+const buynowMenuBar = () => {
+  document.getElementsByClassName("thtext1")[0].click();
 };
 
 const selectRound = () => {
