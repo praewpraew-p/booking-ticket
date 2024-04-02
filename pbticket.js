@@ -25,7 +25,7 @@ const selectSitSeatAndBooknow = () => {
   document.querySelectorAll("input[name='SUBMIT']")[0].click();
 };
 
-const selectSitSeatSpecificFrontSeatSecondaryStageAndBooknow = () => {
+const selectSitSeatSpecificFrontSeatExtendedStageAndBooknow = () => {
   let frontRow = [...document.querySelectorAll("tr")].filter(
     (el) =>
       !el.querySelector("td[bgColor='#EEEEEE']") &&
