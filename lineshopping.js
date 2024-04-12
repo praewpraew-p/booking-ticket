@@ -24,6 +24,10 @@ const buynowButton = () => {
   document.querySelector("button[data-atd='buy-now-button']").click();
 };
 
+const buynowButtonModal = () => {
+  document.querySelector("button[data-atd='variant-buy-now-button']").click();
+};
+
 const paymentDetail = () => {
   document.querySelector("label[for*='shipment-option']").click();
   document.querySelector("input[name='payment-option-list-radio-3']").click();
