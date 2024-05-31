@@ -11,3 +11,5 @@
 // https://www.popmart.com/th/checkout?spuId=873&skuId=1393&count=1&spuTitle=JACKSON%20WANG%20MAGIC%20MAN%20SERIES%20FIGURES
 // https://www.popmart.com/th/checkout?spuId=918&skuId=1460&count=1&spuTitle=CRYBABY%20CHEER%20UP%2C%20BABY%21%20SERIES-Plush%20Doll
 // https://www.popmart.com/th/checkout?spuId=919&skuId=1461&count=1&spuTitle=CRYBABY%20CHEER%20UP%2C%20BABY%21%20SERIES-Plush%20Doll%20Pendant
+// https://www.popmart.com/th/checkout?spuId=1030&skuId=1606&count=1&spuTitle=PUCKY%20The%20Feast%20Series%20Figures
+// https://www.popmart.com/th/checkout?spuId=1040&skuId=1627&count=1&spuTitle=CRYBABY%20CHEER%20UP%2C%20BABY!%20SERIES-Plush%20Pendant%20Blind%20Box

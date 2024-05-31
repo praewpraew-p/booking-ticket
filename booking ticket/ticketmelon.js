@@ -18,6 +18,18 @@ const selectSitSeat = () => {
   document.querySelectorAll("div[class*='SeatAvaliableStatus']")[0].click();
 };
 
+const selectSitSeatMiddleOfStage = () => {
+  document
+    .querySelectorAll("div[class*='SeatAvaliableStatus']")
+    [
+      Math.floor(
+        document
+          .querySelectorAll("div[style='padding-right: 30px;']")[0]
+          .querySelectorAll("div[class*='SeatAvaliableStatus']").length / 2
+      )
+    ].click();
+};
+
 const booking = () => {
   document.getElementById("checkout-seatmap").click();
 };
