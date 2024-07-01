@@ -1,4 +1,5 @@
 // Tips: ค่อยๆ กดที่นั่ง ถ้ารีบกดรัวๆ มันจะ error ถ้ากดที่ได้แล้วให้รีบ booking ไม่งั้นจะเด้ง
+// Tips: ต้อง refresh ก่อนกด Select Zone
 
 const selectRound = () => {
   document.getElementById("booknow-button0").click();

@@ -20,8 +20,8 @@ const booking = () => {
 
 const payment = () => {
   document.getElementsByClassName("payment_input email")[0].value =
-    "aris.pw10@gmail.com";
+    "ticketishereka@gmail.com";
   document.getElementsByClassName("payment_input phone")[0].value =
-    "0959267625";
+    "0816892386";
   document.getElementById("kbankButton").click();
 };

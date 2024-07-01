@@ -21,7 +21,11 @@ const decreaseQuantity = () => {
 };
 
 const buynowButton = () => {
-  document.querySelector("button[data-atd='buy-now-button']").click();
+  document
+    .querySelectorAll(
+      "button[class*='[--main-color:theme(colors.gray.750)]']"
+    )[0]
+    .click();
 };
 
 const buynowButtonModal = () => {

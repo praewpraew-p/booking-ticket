@@ -13,3 +13,30 @@
 // https://www.popmart.com/th/checkout?spuId=919&skuId=1461&count=1&spuTitle=CRYBABY%20CHEER%20UP%2C%20BABY%21%20SERIES-Plush%20Doll%20Pendant
 // https://www.popmart.com/th/checkout?spuId=1030&skuId=1606&count=1&spuTitle=PUCKY%20The%20Feast%20Series%20Figures
 // https://www.popmart.com/th/checkout?spuId=1040&skuId=1627&count=1&spuTitle=CRYBABY%20CHEER%20UP%2C%20BABY!%20SERIES-Plush%20Pendant%20Blind%20Box
+// https://www.popmart.com/th/checkout?spuId=1198&skuId=1834&count=1&spuTitle=MEGA%20SPACE%20MOLLY%20400%25%20Garfield
+
+// Register
+// https://popmart-ladprao.pubcastplus.com/bnvstscdgu
+
+const registerButton = () => {
+  document.getElementsByClassName("register")[0].click();
+};
+
+const selectBranch = () => {
+  document.getElementsByClassName("branch-item")[2].click();
+  document.getElementsByClassName("next-btn")[0].click();
+};
+
+const selectDate = () => {
+  document.querySelector("button[class*='Mui-selected']");
+};
+
+const selectTime = () => {
+  document.getElementsByClassName("timeButtons")[0].click();
+  document.getElementsByClassName("Next center-text-btn")[0].click();
+};
+
+const confirmInfomation = () => {
+  document.getElementsByClassName("ant-checkbox-input")[0].click();
+  document.getElementsByClassName("next-btn")[0].click();
+};

@@ -34,6 +34,21 @@ const selectSitSeatAndBooknow = () => {
   document.getElementsByClassName("btn btn-book mt-3")[0].click();
 };
 
+const selectSitSeatExtendStageAndBooknow = () => {
+  [
+    ...[...document.querySelectorAll("tr")]
+      .filter(
+        (el) =>
+          !el.querySelector("td > div > svg[class='seat ng-star-inserted']") &&
+          el.querySelector("td > div > svg[class='seat available']")
+      )[0] // row
+      .querySelectorAll("div[class='ng-star-inserted']"),
+  ]
+    .filter((el) => el.querySelector("svg[class='seat available']"))[0] // seat
+    .click();
+  document.getElementsByClassName("btn btn-book mt-3")[0].click();
+};
+
 const selectSitSeatFromLeftZoneAndBookNow = () => {
   let row = [...document.querySelectorAll("tr")].filter((el) =>
     el.getElementsByClassName("seat-rotate ng-star-inserted")

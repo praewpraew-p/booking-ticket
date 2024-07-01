@@ -43,6 +43,7 @@ const selectStandingSeat = () => {
   document
     .querySelectorAll("select[name='book_cnt']")[0]
     .dispatchEvent(new Event("change"));
+  document.getElementById("booknow").click();
 };
 
 const selectSitSeatWithCondition = () => {
