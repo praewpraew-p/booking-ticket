@@ -17,16 +17,22 @@
 
 // Register
 // https://popmart-ladprao.pubcastplus.com/bnvstscdgu
+// https://popmart-ladprao.pubcastplus.com/4m3nt3hw9u45r23t2erwt (ladprao)
+// https://popmart-event.pubcastplus.com/gf34mpfgn35r645gwer (new event)
+// https://www.popmart.com/th/pop-now/set/10-10000104000070
 
+//rocket
 const registerButton = () => {
   document.getElementsByClassName("register")[0].click();
 };
 
+// next button doesn't work
 const selectBranch = () => {
   document.getElementsByClassName("branch-item")[2].click();
   document.getElementsByClassName("next-btn")[0].click();
 };
 
+// doesn't work
 const selectDate = () => {
   document.querySelector("button[class*='Mui-selected']");
 };
@@ -36,6 +42,7 @@ const selectTime = () => {
   document.getElementsByClassName("Next center-text-btn")[0].click();
 };
 
+// must wait for cloudfare verify
 const confirmInfomation = () => {
   document.getElementsByClassName("ant-checkbox-input")[0].click();
   document.getElementsByClassName("next-btn")[0].click();

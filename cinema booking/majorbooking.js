@@ -4,8 +4,8 @@ const selectDate = () => {
 
 const selectTime = () => {
   document
-    .getElementsByClassName("bscbbm-theatre-list-time")[1]
-    .querySelector("a")
+    .getElementsByClassName("bscbbm-theatre-list-time")[0] // โรง
+    .querySelectorAll("a")[1] // เวลา
     .click();
   document
     .getElementsByClassName(
@@ -14,14 +14,18 @@ const selectTime = () => {
     .click();
 };
 
+const selectSeat = () => {
+  document.querySelectorAll("a[id*='SEAT']")[0].click();
+};
+
 const booking = () => {
   document.getElementsByClassName("btn-showtime-buy")[0].click();
 };
 
 const payment = () => {
   document.getElementsByClassName("payment_input email")[0].value =
-    "ticketishereka@gmail.com";
+    "aris.pw10@gmail.com";
   document.getElementsByClassName("payment_input phone")[0].value =
-    "0816892386";
+    "0959267625";
   document.getElementById("kbankButton").click();
 };

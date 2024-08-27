@@ -3,7 +3,7 @@ const buynow = () => {
 };
 
 const selectZone = () => {
-  document.querySelector("a[title*='vip']").click();
+  document.querySelector("a[title*='A2']").click();
 };
 
 const selectSeat = () => {
