@@ -3,8 +3,8 @@ const clickProduct = () => {
 };
 
 const selectOption = () => {
-  document
-    .querySelectorAll("button[data-atd='variant-option1-button']")[0]
+  [...document.querySelectorAll("button[data-v-7bd9e4a8-s]")]
+    .find((el) => el.innerText === "18.30")
     .click();
 };
 
@@ -29,11 +29,13 @@ const buynowButton = () => {
 };
 
 const buynowButtonModal = () => {
-  document.querySelector("button[data-atd='variant-buy-now-button']").click();
+  document.querySelector("button[data-atd='buy-now-button']").click();
 };
 
 const paymentDetail = () => {
   document.querySelector("label[for*='shipment-option']").click();
   document.querySelector("input[name='payment-option-list-radio-3']").click();
+
+  document.querySelector("img[alt='payment-option-logo-KGP_QR']").click();
   document.querySelector("button[data-atd='placeorder-button']").click();
 };

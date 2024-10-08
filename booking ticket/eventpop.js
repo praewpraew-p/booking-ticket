@@ -1,3 +1,5 @@
+// Seating link: https://www.eventpop.me/events/50947/seating
+
 const buynow = () => {
   document
     .getElementsByClassName("btn btn-default select-seat signin-checking")[0]
@@ -5,7 +7,7 @@ const buynow = () => {
 };
 
 const selectZone = () => {
-  document.getElementById("S-3").dispatchEvent(new Event("click"));
+  document.getElementById("E2").dispatchEvent(new Event("click"));
 };
 
 const selectTicketAmount = () => {

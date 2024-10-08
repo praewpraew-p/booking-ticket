@@ -88,7 +88,7 @@ const selectSitSeatWithMiddleSeatOfTheRowAndBooknow = () => {
     ...[...document.querySelectorAll("tr")]
       .filter((el) =>
         el.getElementsByClassName("seat-rotate ng-star-inserted")
-      )[1]
+      )[1] // change row
       .querySelectorAll("div[class='ng-star-inserted']"),
   ]
     .filter((el) => el.querySelector("svg[class='seat available']"))
@@ -98,7 +98,7 @@ const selectSitSeatWithMiddleSeatOfTheRowAndBooknow = () => {
           ...[...document.querySelectorAll("tr")]
             .filter((el) =>
               el.getElementsByClassName("seat-rotate ng-star-inserted")
-            )[1]
+            )[1] // change row
             .querySelectorAll("div[class='ng-star-inserted']"),
         ].filter((el) => el.querySelector("svg[class='seat available']"))
           .length / 2

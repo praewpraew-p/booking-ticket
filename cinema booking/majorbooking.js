@@ -4,7 +4,7 @@ const selectDate = () => {
 
 const selectTime = () => {
   document
-    .getElementsByClassName("bscbbm-theatre-list-time")[0] // โรง
+    .getElementsByClassName("bscbbm-theatre-list-time")[0] // เรื่อง
     .querySelectorAll("a")[1] // เวลา
     .click();
   document

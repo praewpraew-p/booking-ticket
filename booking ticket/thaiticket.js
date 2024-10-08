@@ -64,8 +64,7 @@ const selectSitSeatFromRightZone = () => {
 
 const selectSitSeatFromRightZoneWithFirstRowCondition = () => {
   [...[...document.querySelectorAll("tr")][0].querySelectorAll("td")]
-    .filter((el) => el.querySelector("div[class='seatuncheck']"))
-    .slice(-1)[0]
+    .filter((el) => el.querySelector("div[class='seatuncheck']"))[0]
     .click();
 };
 
@@ -145,7 +144,7 @@ const paymentData = () => {
   document.getElementById("btn_pickup").click();
   document.getElementById("btn_mobile").click();
   document.getElementById("btn_kplus").click();
-  document.getElementById("payplus_contact").value = "0959267625";
+  document.getElementById("payplus_contact").value = "0621781426";
   document.getElementById("check-agree").click();
   document.getElementById("btn_confirm").click();
 };
