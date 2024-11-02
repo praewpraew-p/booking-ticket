@@ -1,3 +1,5 @@
+// Tips: ตอนกดผังให้กดที่ว่างข้างนอกก่อนด้วย allticket ปรับใหม่แล้ว
+
 const buynow = () => {
   document.getElementsByClassName("btn btn-atk-primary")[0].click();
 };
@@ -83,6 +85,7 @@ const selectSitSeatFromLeftZoneAndBookNowInOneLine = () => {
   document.getElementsByClassName("btn btn-book mt-3")[0].click();
 };
 
+// ที่ตรงกลางของแถว
 const selectSitSeatWithMiddleSeatOfTheRowAndBooknow = () => {
   [
     ...[...document.querySelectorAll("tr")]
@@ -113,6 +116,18 @@ const selectSitSeatSpecificRowAndBooknow = () => {
       .filter((el) =>
         el.getElementsByClassName("seat-rotate ng-star-inserted")
       )[2]
+      .querySelectorAll("div[class='ng-star-inserted']"),
+  ]
+    .filter((el) => el.querySelector("svg[class='seat available']"))[0]
+    .click();
+  document.getElementsByClassName("btn btn-book mt-3")[0].click();
+};
+
+const selectSitSeatLastRowAndBooknow = () => {
+  [
+    ...[...document.querySelectorAll("tr")]
+      .filter((el) => el.getElementsByClassName("seat-rotate ng-star-inserted"))
+      .slice(-1)[0]
       .querySelectorAll("div[class='ng-star-inserted']"),
   ]
     .filter((el) => el.querySelector("svg[class='seat available']"))[0]
